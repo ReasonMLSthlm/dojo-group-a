@@ -12,6 +12,10 @@ function handleClick(_, _$1) {
   return /* () */0;
 }
 
+function s(prim) {
+  return prim;
+}
+
 function make(message, _) {
   return /* record */[
           /* debugName */component[/* debugName */0],
@@ -38,5 +42,6 @@ function make(message, _) {
 
 exports.component = component;
 exports.handleClick = handleClick;
+exports.s = s;
 exports.make = make;
 /* component Not a pure module */
