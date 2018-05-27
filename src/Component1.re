@@ -8,6 +8,8 @@ let handleClick = (_event, _self) => Js.log("clicked!");
 
 let s = ReasonReact.string;
 
+Data.get()
+
 /* `make` is the function that mandatorily takes `children` (if you want to use
    `JSX). `message` is a named argument, which simulates ReactJS props. Usage:
 

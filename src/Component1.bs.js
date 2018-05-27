@@ -4,6 +4,7 @@
 var Curry = require("bs-platform/lib/js/curry.js");
 var React = require("react");
 var ReasonReact = require("reason-react/src/ReasonReact.js");
+var Data$ReactTemplate = require("./Data.bs.js");
 
 var component = ReasonReact.statelessComponent("Page");
 
@@ -15,6 +16,8 @@ function handleClick(_, _$1) {
 function s(prim) {
   return prim;
 }
+
+Data$ReactTemplate.get(/* () */0);
 
 function make(message, _) {
   return /* record */[
