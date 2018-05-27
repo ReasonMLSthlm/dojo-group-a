@@ -8,7 +8,7 @@ let handleClick = (_event, _self) => Js.log("clicked!");
 
 let s = ReasonReact.string;
 
-Data.get()
+Data.get() |> Js.Promise.then_(users => Js.Promise.resolve(Js.log2("more values!", users)));
 
 /* `make` is the function that mandatorily takes `children` (if you want to use
    `JSX). `message` is a named argument, which simulates ReactJS props. Usage:
@@ -21,7 +21,5 @@ Data.get()
 let make = (~message, _children) => {
   ...component,
   render: self =>
-    <div onClick=(self.handle(handleClick))>
-      (s(message))
-    </div>,
+    <div onClick=(self.handle(handleClick))> (s(message)) </div>,
 };

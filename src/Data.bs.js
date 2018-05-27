@@ -8,7 +8,7 @@ function get() {
   return fetch(server).then((function (prim) {
                   return prim.text();
                 })).then((function (text) {
-                return Promise.resolve((console.log(text), /* () */0));
+                return Promise.resolve(JSON.parse(text));
               }));
 }
 

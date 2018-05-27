@@ -17,7 +17,9 @@ function s(prim) {
   return prim;
 }
 
-Data$ReactTemplate.get(/* () */0);
+Data$ReactTemplate.get(/* () */0).then((function (users) {
+        return Promise.resolve((console.log("more values!", users), /* () */0));
+      }));
 
 function make(message, _) {
   return /* record */[
