@@ -1,4 +1,4 @@
-type location = { 
+type location = {
   lat : int,
   lon : int,
 };
